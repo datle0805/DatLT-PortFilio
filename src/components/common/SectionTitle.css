@@ -8,6 +8,7 @@
   font-weight: 800;
   margin-bottom: var(--space-sm);
   background: var(--text-primary);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

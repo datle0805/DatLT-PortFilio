@@ -47,7 +47,11 @@ export function ExperienceCard({ project, index }: { project: Project; index: nu
           )}
         </div>
 
-        <button className="expand-btn">
+        <button 
+          className="expand-btn" 
+          aria-expanded={expanded} 
+          aria-label={expanded ? "Hide project details" : "View project details"}
+        >
           {expanded ? (
             <><ChevronUp size={18} /> Hide details</>
           ) : (

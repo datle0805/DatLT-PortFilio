@@ -102,7 +102,7 @@ export default function Contact() {
               )}
             </button>
             
-            {submitted && <p className="success-msg">Message sent successfully!</p>}
+            {submitted && <p className="success-msg" aria-live="polite">Message sent successfully!</p>}
           </form>
         </ScrollReveal>
       </div>
