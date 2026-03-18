@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Superpowers and local brainstorm assets
+.superpowers/
+.superpowers-temp/
+brainstorming/
+dashboard.html
+plan.md
+design-system/
