@@ -26,6 +26,37 @@
   max-width: 800px;
 }
 
+.hero-avatar-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto var(--space-xl);
+}
+
+.hero-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--border);
+  position: relative;
+  z-index: 2;
+  box-shadow: var(--shadow-xl);
+}
+
+.avatar-glow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: var(--accent-gradient);
+  filter: blur(20px);
+  opacity: 0.3;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .hero-greeting {
   font-family: var(--font-mono);
   color: var(--accent-secondary);

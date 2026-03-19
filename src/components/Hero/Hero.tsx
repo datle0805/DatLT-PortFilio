@@ -9,6 +9,16 @@ export default function Hero() {
     <section id="hero" className="hero-section">
       <div className="hero-background"></div>
       <div className="hero-content">
+        <motion.div 
+          className="hero-avatar-container"
+          initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+        >
+          <img src={profile.avatar} alt={profile.name} className="hero-avatar" />
+          <div className="avatar-glow"></div>
+        </motion.div>
+        
         <motion.p 
           className="hero-greeting"
           initial={{ opacity: 0, y: 20 }}
